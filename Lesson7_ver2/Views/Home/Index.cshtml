@@ -1,0 +1,45 @@
+﻿
+@model Lesson7_ver2.Models.User
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registration</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(x => x.Login)
+        @Html.EditorFor(x => x.Login)
+        @Html.ValidationMessageFor(x => x.Login)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+        @Html.ValidationMessageFor(x => x.Password)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.ConfirmPassword)
+        @Html.EditorFor(x => x.ConfirmPassword)
+        @Html.ValidationMessageFor(x => x.ConfirmPassword)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Age)
+        @Html.EditorFor(x => x.Age)
+        @Html.ValidationMessageFor(x => x.Age)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Accepted)
+        @Html.EditorFor(x => x.Accepted)
+        @Html.ValidationMessageFor(x => x.Accepted)
+    </p>
+
+    <input type="submit" value="Register" />
+
+}
+

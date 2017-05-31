@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+   <div>
+       @if (ViewBag.Num == 1)
+       {
+           @: Computer
+       }
+
+       Viewbag num  = @ViewBag.Num
+
+       </div>
+    <div>
+        @Html.RouteLink("Product Area", new { controller = "Home", action = "Index", area = "ProductArea" })
+        </div>
+</body>
+</html>

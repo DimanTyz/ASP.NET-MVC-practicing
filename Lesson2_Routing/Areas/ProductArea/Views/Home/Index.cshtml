@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+@model IEnumerable<Product>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+     <div> 
+        Index Controller
+        @foreach (var item in Model)
+        {
+            <h3>
+                Product name: @item.Name;
+                Product id: @item.Id;
+                @if (item.ProductType != null)
+
+                {<>Product type: @item.ProductType</> }
+                
+            </h3>
+        }
+
+
+    </div>
+    <div> 
+        @Html.ActionLink("Computers in our site", "Show", "Computer")
+        @Html.ActionLink("Headphones in our site", "Show", "HeadPhone")
+        @Html.ActionLink("Cellphones in our site", "Show", "SmartPhone")
+    </div>
+</body>
+</html>

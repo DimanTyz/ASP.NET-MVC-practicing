@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Control";
+}
+
+
+@section Body
+{
+   <span>Hi there from index </span>    
+}
+
+@section Partial
+{
+    @Html.Partial("Part1")
+@Html.Action("CurrentDate")
+}

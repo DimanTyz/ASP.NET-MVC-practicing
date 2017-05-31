@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<html>
+<body>
+
+    @using (Html.BeginForm())
+    {
+        <fieldset>
+            <legend> Select and buy ur product</legend>
+            <div>
+                <label>Product Name</label>
+                @Html.TextBox("Name")
+            </div>
+
+            <div>
+                <label>Product Type</label>
+                @Html.TextBox("Product Type")
+            </div>
+
+            <div>
+                <label>Are u sure? </label>
+                @Html.CheckBox("Sure!")
+            </div>
+
+            <input type="submit" value="Create" />
+
+
+        </fieldset>
+    }
+
+
+
+
+
+</body>
+</html>
+

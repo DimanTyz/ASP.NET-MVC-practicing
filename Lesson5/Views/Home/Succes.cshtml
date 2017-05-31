@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Succes";
+    var grid = new WebGrid(ViewBag.prods);
+}
+
+<h2>Succes</h2>
+<p>Prodcut @ViewBag.Name added</p>
+
+
+@grid.GetHtml()
+
